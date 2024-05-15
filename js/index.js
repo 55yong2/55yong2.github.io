@@ -1,5 +1,3 @@
-var maxPeople = 0;
-
 const playerList = [
   { name: "김경현", level: 4 },
   { name: "김유성", level: 2 },
@@ -43,6 +41,8 @@ const playerList = [
   { name: "황재훈", level: 1.5 },
 ];
 
+var maxPeople = 0;
+
 document.addEventListener("DOMContentLoaded", function () {
   let radios = document.querySelectorAll('input[name="maxPeople"]');
   radios.forEach(function (radio) {
@@ -58,6 +58,13 @@ function submitForm() {
   let selectedPlayers = [];
   let checkboxes = form.querySelectorAll("input[type=checkbox]:checked");
   let playPlayer = [];
+  let team = [];
+  let index = 0;
+
+  if (maxPeople === 0) {
+    alert("팀 최대 인원수를 선택해주세요!");
+    return;
+  }
 
   for (let i = 0; i < checkboxes.length; i++) {
     selectedPlayers.push(checkboxes[i].value);
@@ -66,10 +73,27 @@ function submitForm() {
   for (let i = 0; i < selectedPlayers.length; i++) {
     for (let j = 0; j < playerList.length; j++) {
       if (playerList[j].name == selectedPlayers[i]) {
-        playPlayer.push(playerList[i]);
+        playPlayer.push(playerList[j]);
       }
     }
   }
-  console.log(playPlayer);
-  console.log(maxPeople);
+
+  while (true) {
+    let randPlayer = Math.floor(Math.random() * playPlayer.length);
+
+    if (playPlayer.length === 0) break;
+
+    if (team.length === maxPeople) {
+      console.log(team);
+      team = [];
+      team.length = 0;
+      continue;
+    }
+
+    if (!(team[index] in playPlayer[randPlayer])) {
+      team.push(playPlayer[randPlayer]);
+      playPlayer.splice(randPlayer, 1);
+      index++;
+    }
+  }
 }
