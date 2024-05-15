@@ -40,3 +40,16 @@ const playerList = [
   { name: "이성재", level: 1 },
   { name: "황도윤", level: 1 },
 ];
+
+function submitForm() {
+  var form = document.getElementById("playerForm");
+  var selectedPlayers = [];
+  var checkboxes = form.querySelectorAll("input[type=checkbox]:checked");
+
+  for (var i = 0; i < checkboxes.length; i++) {
+    selectedPlayers.push(checkboxes[i].value);
+  }
+
+  // 선택된 색상을 로그에 출력하거나 서버로 전송하는 등의 작업 수행
+  console.log("선택된 동아리원 : ", selectedPlayers);
+}

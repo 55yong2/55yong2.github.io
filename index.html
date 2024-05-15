@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Emotion FAS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="./js/emotion.js"></script>
+  </head>
+  <body>
+    <div class="mx-auto max-w-screen-xl px-4 py-16 sm:px-6 lg:px-8">
+      <div class="mx-auto max-w-lg text-center">
+        <h1 class="text-2xl font-bold sm:text-3xl">
+          풋살 참여 인원을 선택해주세요
+        </h1>
+
+        <p class="mt-4 text-gray-500">Emotion FAS 풋살 팀 자동 매칭 시스템</p>
+      </div>
+
+      <form
+        id="playerForm"
+        action="team.html"
+        method="post"
+        class="mx-auto mb-0 mt-8 max-w-md space-y-4"
+      >
+        <fieldset class="flex">
+          <legend class="sr-only">동아리원 목록</legend>
+
+          <!-- 왼쪽 체크박스 시작 -->
+          <div class="flex-1">
+            <!-- 체크박스 + 동아리원명 시작 -->
+            <div class="space-y-2">
+              <label
+                for="Player1"
+                class="flex cursor-pointer items-start gap-4"
+              >
+                <div class="flex items-center">
+                  &#8203;
+                  <input
+                    type="checkbox"
+                    class="size-4 rounded border-gray-300"
+                    name="players[]"
+                    value="김경현"
+                  />
+                </div>
+
+                <div>
+                  <strong class="font-medium text-gray-900"> 김경현 </strong>
+                </div>
+              </label>
+            </div>
+            <!-- 체크박스 + 동아리원명 끝 -->
+
+            <!-- 체크박스 + 동아리원명 시작 -->
+            <div class="space-y-2">
+              <label
+                for="Player1"
+                class="flex cursor-pointer items-start gap-4"
+              >
+                <div class="flex items-center">
+                  &#8203;
+                  <input
+                    type="checkbox"
+                    class="size-4 rounded border-gray-300"
+                    name="players[]"
+                    value="김유성"
+                  />
+                </div>
+
+                <div>
+                  <strong class="font-medium text-gray-900"> 김유성 </strong>
+                </div>
+              </label>
+            </div>
+            <!-- 체크박스 + 동아리원명 끝 -->
+
+            <!-- 체크박스 + 동아리원명 시작 -->
+            <div class="space-y-2">
+              <label
+                for="Player1"
+                class="flex cursor-pointer items-start gap-4"
+              >
+                <div class="flex items-center">
+                  &#8203;
+                  <input
+                    type="checkbox"
+                    class="size-4 rounded border-gray-300"
+                    name="players[]"
+                    value="심규태"
+                  />
+                </div>
+
+                <div>
+                  <strong class="font-medium text-gray-900"> 심규태 </strong>
+                </div>
+              </label>
+            </div>
+            <!-- 체크박스 + 동아리원명 끝 -->
+
+            <!-- 체크박스 + 동아리원명 시작 -->
+            <div class="space-y-2">
+              <label
+                for="Player1"
+                class="flex cursor-pointer items-start gap-4"
+              >
+                <div class="flex items-center">
+                  &#8203;
+                  <input
+                    type="checkbox"
+                    class="size-4 rounded border-gray-300"
+                    name="players[]"
+                    value="오용준"
+                  />
+                </div>
+
+                <div>
+                  <strong class="font-medium text-gray-900"> 오용준 </strong>
+                </div>
+              </label>
+            </div>
+            <!-- 체크박스 + 동아리원명 끝 -->
+
+            <!-- 체크박스 + 동아리원명 시작 -->
+            <div class="space-y-2">
+              <label
+                for="Player1"
+                class="flex cursor-pointer items-start gap-4"
+              >
+                <div class="flex items-center">
+                  &#8203;
+                  <input
+                    type="checkbox"
+                    class="size-4 rounded border-gray-300"
+                    name="players[]"
+                    value="정은수"
+                  />
+                </div>
+
+                <div>
+                  <strong class="font-medium text-gray-900"> 정은수 </strong>
+                </div>
+              </label>
+            </div>
+            <!-- 체크박스 + 동아리원명 끝 -->
+
+            <!-- 체크박스 + 동아리원명 시작 -->
+            <div class="space-y-2">
+              <label
+                for="Player1"
+                class="flex cursor-pointer items-start gap-4"
+              >
+                <div class="flex items-center">
+                  &#8203;
+                  <input
+                    type="checkbox"
+                    class="size-4 rounded border-gray-300"
+                    name="players[]"
+                    value="강정헌"
+                  />
+                </div>
+
+                <div>
+                  <strong class="font-medium text-gray-900"> 강정헌 </strong>
+                </div>
+              </label>
+            </div>
+            <!-- 체크박스 + 동아리원명 끝 -->
+
+            <!-- 체크박스 + 동아리원명 시작 -->
+            <div class="space-y-2">
+              <label
+                for="Player1"
+                class="flex cursor-pointer items-start gap-4"
+              >
+                <div class="flex items-center">
+                  &#8203;
+                  <input
+                    type="checkbox"
+                    class="size-4 rounded border-gray-300"
+                    name="players[]"
+                    value="김민성"
+                  />
+                </div>
+
+                <div>
+                  <strong class="font-medium text-gray-900"> 김민성 </strong>
+                </div>
+              </label>
+            </div>
+            <!-- 체크박스 + 동아리원명 끝 -->
+
+            <!-- 체크박스 + 동아리원명 시작 -->
+            <div class="space-y-2">
+              <label
+                for="Player1"
+                class="flex cursor-pointer items-start gap-4"
+              >
+                <div class="flex items-center">
+                  &#8203;
+                  <input
+                    type="checkbox"
+                    class="size-4 rounded border-gray-300"
+                    name="players[]"
+                    value="김병국"
+                  />
+                </div>
+
+                <div>
+                  <strong class="font-medium text-gray-900"> 김병국 </strong>
+                </div>
+              </label>
+            </div>
+            <!-- 체크박스 + 동아리원명 끝 -->
+
+            <!-- 체크박스 + 동아리원명 시작 -->
+            <div class="space-y-2">
+              <label
+                for="Player1"
+                class="flex cursor-pointer items-start gap-4"
+              >
+                <div class="flex items-center">
+                  &#8203;
+                  <input
+                    type="checkbox"
+                    class="size-4 rounded border-gray-300"
+                    name="players[]"
+                    value="김상엽"
+                  />
+                </div>
+
+                <div>
+                  <strong class="font-medium text-gray-900"> 김상엽 </strong>
+                </div>
+              </label>
+            </div>
+            <!-- 체크박스 + 동아리원명 끝 -->
+
+            <!-- 체크박스 + 동아리원명 시작 -->
+            <div class="space-y-2">
+              <label
+                for="Player1"
+                class="flex cursor-pointer items-start gap-4"
+              >
+                <div class="flex items-center">
+                  &#8203;
+                  <input
+                    type="checkbox"
+                    class="size-4 rounded border-gray-300"
+                    name="players[]"
+                    value="김상형"
+                  />
+                </div>
+
+                <div>
+                  <strong class="font-medium text-gray-900"> 김상형 </strong>
+                </div>
+              </label>
+            </div>
+            <!-- 체크박스 + 동아리원명 끝 -->
+
+            <!-- 체크박스 + 동아리원명 시작 -->
+            <div class="space-y-2">
+              <label
+                for="Player1"
+                class="flex cursor-pointer items-start gap-4"
+              >
+                <div class="flex items-center">
+                  &#8203;
+                  <input
+                    type="checkbox"
+                    class="size-4 rounded border-gray-300"
+                    name="players[]"
+                    value="김성민"
+                  />
+                </div>
+
+                <div>
+                  <strong class="font-medium text-gray-900"> 김성민 </strong>
+                </div>
+              </label>
+            </div>
+            <!-- 체크박스 + 동아리원명 끝 -->
+
+            <!-- 체크박스 + 동아리원명 시작 -->
+            <div class="space-y-2">
+              <label
+                for="Player1"
+                class="flex cursor-pointer items-start gap-4"
+              >
+                <div class="flex items-center">
+                  &#8203;
+                  <input
+                    type="checkbox"
+                    class="size-4 rounded border-gray-300"
+                    name="players[]"
+                    value="김연성"
+                  />
+                </div>
+
+                <div>
+                  <strong class="font-medium text-gray-900"> 김연성 </strong>
+                </div>
+              </label>
+            </div>
+            <!-- 체크박스 + 동아리원명 끝 -->
+
+            <!-- 체크박스 + 동아리원명 시작 -->
+            <div class="space-y-2">
+              <label
+                for="Player1"
+                class="flex cursor-pointer items-start gap-4"
+              >
+                <div class="flex items-center">
+                  &#8203;
+                  <input
+                    type="checkbox"
+                    class="size-4 rounded border-gray-300"
+                    name="players[]"
+                    value="김진욱"
+                  />
+                </div>
+
+                <div>
+                  <strong class="font-medium text-gray-900"> 김진욱 </strong>
+                </div>
+              </label>
+            </div>
+            <!-- 체크박스 + 동아리원명 끝 -->
+
+            <!-- 체크박스 + 동아리원명 시작 -->
+            <div class="space-y-2">
+              <label
+                for="Player1"
+                class="flex cursor-pointer items-start gap-4"
+              >
+                <div class="flex items-center">
+                  &#8203;
+                  <input
+                    type="checkbox"
+                    class="size-4 rounded border-gray-300"
+                    name="players[]"
+                    value="김태경"
+                  />
+                </div>
+
+                <div>
+                  <strong class="font-medium text-gray-900"> 김태경 </strong>
+                </div>
+              </label>
+            </div>
+            <!-- 체크박스 + 동아리원명 끝 -->
+
+            <!-- 체크박스 + 동아리원명 시작 -->
+            <div class="space-y-2">
+              <label
+                for="Player1"
+                class="flex cursor-pointer items-start gap-4"
+              >
+                <div class="flex items-center">
+                  &#8203;
+                  <input
+                    type="checkbox"
+                    class="size-4 rounded border-gray-300"
+                    name="players[]"
+                    value="김한중"
+                  />
+                </div>
+
+                <div>
+                  <strong class="font-medium text-gray-900"> 김한중 </strong>
+                </div>
+              </label>
+            </div>
+            <!-- 체크박스 + 동아리원명 끝 -->
+
+            <!-- 체크박스 + 동아리원명 시작 -->
+            <div class="space-y-2">
+              <label
+                for="Player1"
+                class="flex cursor-pointer items-start gap-4"
+              >
+                <div class="flex items-center">
+                  &#8203;
+                  <input
+                    type="checkbox"
+                    class="size-4 rounded border-gray-300"
+                    name="players[]"
+                    value="문찬혁"
+                  />
+                </div>
+
+                <div>
+                  <strong class="font-medium text-gray-900"> 문찬혁 </strong>
+                </div>
+              </label>
+            </div>
+            <!-- 체크박스 + 동아리원명 끝 -->
+
+            <!-- 체크박스 + 동아리원명 시작 -->
+            <div class="space-y-2">
+              <label
+                for="Player1"
+                class="flex cursor-pointer items-start gap-4"
+              >
+                <div class="flex items-center">
+                  &#8203;
+                  <input
+                    type="checkbox"
+                    class="size-4 rounded border-gray-300"
+                    name="players[]"
+                    value="박시훈"
+                  />
+                </div>
+
+                <div>
+                  <strong class="font-medium text-gray-900"> 박시훈 </strong>
+                </div>
+              </label>
+            </div>
+            <!-- 체크박스 + 동아리원명 끝 -->
+
+            <!-- 체크박스 + 동아리원명 시작 -->
+            <div class="space-y-2">
+              <label
+                for="Player1"
+                class="flex cursor-pointer items-start gap-4"
+              >
+                <div class="flex items-center">
+                  &#8203;
+                  <input
+                    type="checkbox"
+                    class="size-4 rounded border-gray-300"
+                    name="players[]"
+                    value="박재찬"
+                  />
+                </div>
+
+                <div>
+                  <strong class="font-medium text-gray-900"> 박재찬 </strong>
+                </div>
+              </label>
+            </div>
+            <!-- 체크박스 + 동아리원명 끝 -->
+
+            <!-- 체크박스 + 동아리원명 시작 -->
+            <div class="space-y-2">
+              <label
+                for="Player1"
+                class="flex cursor-pointer items-start gap-4"
+              >
+                <div class="flex items-center">
+                  &#8203;
+                  <input
+                    type="checkbox"
+                    class="size-4 rounded border-gray-300"
+                    name="players[]"
+                    value="방기림 "
+                  />
+                </div>
+
+                <div>
+                  <strong class="font-medium text-gray-900"> 방기림 </strong>
+                </div>
+              </label>
+            </div>
+            <!-- 체크박스 + 동아리원명 끝 -->
+
+            <!-- 체크박스 + 동아리원명 시작 -->
+            <div class="space-y-2">
+              <label
+                for="Player1"
+                class="flex cursor-pointer items-start gap-4"
+              >
+                <div class="flex items-center">
+                  &#8203;
+                  <input
+                    type="checkbox"
+                    class="size-4 rounded border-gray-300"
+                    name="players[]"
+                    value="방민수"
+                  />
+                </div>
+
+                <div>
+                  <strong class="font-medium text-gray-900"> 방민수 </strong>
+                </div>
+              </label>
+            </div>
+            <!-- 체크박스 + 동아리원명 끝 -->
+          </div>
+          <!-- 왼쪽 체크박스 끝 -->
+
+          <!-- 오른쪽 체크박스 시작-->
+          <div class="flex-1">
+            <!-- 체크박스 + 동아리원명 시작 -->
+            <div class="space-y-2">
+              <label
+                for="Player1"
+                class="flex cursor-pointer items-start gap-4"
+              >
+                <div class="flex items-center">
+                  &#8203;
+                  <input
+                    type="checkbox"
+                    class="size-4 rounded border-gray-300"
+                    name="players[]"
+                    value="선우빈"
+                  />
+                </div>
+
+                <div>
+                  <strong class="font-medium text-gray-900"> 선우빈 </strong>
+                </div>
+              </label>
+            </div>
+            <!-- 체크박스 + 동아리원명 끝 -->
+
+            <!-- 체크박스 + 동아리원명 시작 -->
+            <div class="space-y-2">
+              <label
+                for="Player1"
+                class="flex cursor-pointer items-start gap-4"
+              >
+                <div class="flex items-center">
+                  &#8203;
+                  <input
+                    type="checkbox"
+                    class="size-4 rounded border-gray-300"
+                    name="players[]"
+                    value="손영웅"
+                  />
+                </div>
+
+                <div>
+                  <strong class="font-medium text-gray-900"> 손영웅 </strong>
+                </div>
+              </label>
+            </div>
+            <!-- 체크박스 + 동아리원명 끝 -->
+
+            <!-- 체크박스 + 동아리원명 시작 -->
+            <div class="space-y-2">
+              <label
+                for="Player1"
+                class="flex cursor-pointer items-start gap-4"
+              >
+                <div class="flex items-center">
+                  &#8203;
+                  <input
+                    type="checkbox"
+                    class="size-4 rounded border-gray-300"
+                    name="players[]"
+                    value="손준서"
+                  />
+                </div>
+
+                <div>
+                  <strong class="font-medium text-gray-900"> 손준서 </strong>
+                </div>
+              </label>
+            </div>
+            <!-- 체크박스 + 동아리원명 끝 -->
+
+            <!-- 체크박스 + 동아리원명 시작 -->
+            <div class="space-y-2">
+              <label
+                for="Player1"
+                class="flex cursor-pointer items-start gap-4"
+              >
+                <div class="flex items-center">
+                  &#8203;
+                  <input
+                    type="checkbox"
+                    class="size-4 rounded border-gray-300"
+                    name="players[]"
+                    value="손진호"
+                  />
+                </div>
+
+                <div>
+                  <strong class="font-medium text-gray-900"> 손진호 </strong>
+                </div>
+              </label>
+            </div>
+            <!-- 체크박스 + 동아리원명 끝 -->
+
+            <!-- 체크박스 + 동아리원명 시작 -->
+            <div class="space-y-2">
+              <label
+                for="Player1"
+                class="flex cursor-pointer items-start gap-4"
+              >
+                <div class="flex items-center">
+                  &#8203;
+                  <input
+                    type="checkbox"
+                    class="size-4 rounded border-gray-300"
+                    name="players[]"
+                    value="양은혁"
+                  />
+                </div>
+
+                <div>
+                  <strong class="font-medium text-gray-900"> 양은혁 </strong>
+                </div>
+              </label>
+            </div>
+            <!-- 체크박스 + 동아리원명 끝 -->
+
+            <!-- 체크박스 + 동아리원명 시작 -->
+            <div class="space-y-2">
+              <label
+                for="Player1"
+                class="flex cursor-pointer items-start gap-4"
+              >
+                <div class="flex items-center">
+                  &#8203;
+                  <input
+                    type="checkbox"
+                    class="size-4 rounded border-gray-300"
+                    name="players[]"
+                    value="오한주"
+                  />
+                </div>
+
+                <div>
+                  <strong class="font-medium text-gray-900"> 오한주 </strong>
+                </div>
+              </label>
+            </div>
+            <!-- 체크박스 + 동아리원명 끝 -->
+
+            <!-- 체크박스 + 동아리원명 시작 -->
+            <div class="space-y-2">
+              <label
+                for="Player1"
+                class="flex cursor-pointer items-start gap-4"
+              >
+                <div class="flex items-center">
+                  &#8203;
+                  <input
+                    type="checkbox"
+                    class="size-4 rounded border-gray-300"
+                    name="players[]"
+                    value="유승효"
+                  />
+                </div>
+
+                <div>
+                  <strong class="font-medium text-gray-900"> 유승효 </strong>
+                </div>
+              </label>
+            </div>
+            <!-- 체크박스 + 동아리원명 끝 -->
+
+            <!-- 체크박스 + 동아리원명 시작 -->
+            <div class="space-y-2">
+              <label
+                for="Player1"
+                class="flex cursor-pointer items-start gap-4"
+              >
+                <div class="flex items-center">
+                  &#8203;
+                  <input
+                    type="checkbox"
+                    class="size-4 rounded border-gray-300"
+                    name="players[]"
+                    value="윤성빈"
+                  />
+                </div>
+
+                <div>
+                  <strong class="font-medium text-gray-900"> 윤성빈 </strong>
+                </div>
+              </label>
+            </div>
+            <!-- 체크박스 + 동아리원명 끝 -->
+
+            <!-- 체크박스 + 동아리원명 시작 -->
+            <div class="space-y-2">
+              <label
+                for="Player1"
+                class="flex cursor-pointer items-start gap-4"
+              >
+                <div class="flex items-center">
+                  &#8203;
+                  <input
+                    type="checkbox"
+                    class="size-4 rounded border-gray-300"
+                    name="players[]"
+                    value="윤형찬"
+                  />
+                </div>
+
+                <div>
+                  <strong class="font-medium text-gray-900"> 윤형찬 </strong>
+                </div>
+              </label>
+            </div>
+            <!-- 체크박스 + 동아리원명 끝 -->
+
+            <!-- 체크박스 + 동아리원명 시작 -->
+            <div class="space-y-2">
+              <label
+                for="Player1"
+                class="flex cursor-pointer items-start gap-4"
+              >
+                <div class="flex items-center">
+                  &#8203;
+                  <input
+                    type="checkbox"
+                    class="size-4 rounded border-gray-300"
+                    name="players[]"
+                    value="이대희"
+                  />
+                </div>
+
+                <div>
+                  <strong class="font-medium text-gray-900"> 이대희 </strong>
+                </div>
+              </label>
+            </div>
+            <!-- 체크박스 + 동아리원명 끝 -->
+
+            <!-- 체크박스 + 동아리원명 시작 -->
+            <div class="space-y-2">
+              <label
+                for="Player1"
+                class="flex cursor-pointer items-start gap-4"
+              >
+                <div class="flex items-center">
+                  &#8203;
+                  <input
+                    type="checkbox"
+                    class="size-4 rounded border-gray-300"
+                    name="players[]"
+                    value="이동영"
+                  />
+                </div>
+
+                <div>
+                  <strong class="font-medium text-gray-900"> 이동영 </strong>
+                </div>
+              </label>
+            </div>
+            <!-- 체크박스 + 동아리원명 끝 -->
+
+            <!-- 체크박스 + 동아리원명 시작 -->
+            <div class="space-y-2">
+              <label
+                for="Player1"
+                class="flex cursor-pointer items-start gap-4"
+              >
+                <div class="flex items-center">
+                  &#8203;
+                  <input
+                    type="checkbox"
+                    class="size-4 rounded border-gray-300"
+                    name="players[]"
+                    value="이성재"
+                  />
+                </div>
+
+                <div>
+                  <strong class="font-medium text-gray-900"> 이성재 </strong>
+                </div>
+              </label>
+            </div>
+            <!-- 체크박스 + 동아리원명 끝 -->
+
+            <!-- 체크박스 + 동아리원명 시작 -->
+            <div class="space-y-2">
+              <label
+                for="Player1"
+                class="flex cursor-pointer items-start gap-4"
+              >
+                <div class="flex items-center">
+                  &#8203;
+                  <input
+                    type="checkbox"
+                    class="size-4 rounded border-gray-300"
+                    name="players[]"
+                    value="이승찬"
+                  />
+                </div>
+
+                <div>
+                  <strong class="font-medium text-gray-900"> 이승찬 </strong>
+                </div>
+              </label>
+            </div>
+            <!-- 체크박스 + 동아리원명 끝 -->
+
+            <!-- 체크박스 + 동아리원명 시작 -->
+            <div class="space-y-2">
+              <label
+                for="Player1"
+                class="flex cursor-pointer items-start gap-4"
+              >
+                <div class="flex items-center">
+                  &#8203;
+                  <input
+                    type="checkbox"
+                    class="size-4 rounded border-gray-300"
+                    name="players[]"
+                    value="이준형"
+                  />
+                </div>
+
+                <div>
+                  <strong class="font-medium text-gray-900"> 이준형 </strong>
+                </div>
+              </label>
+            </div>
+            <!-- 체크박스 + 동아리원명 끝 -->
+
+            <!-- 체크박스 + 동아리원명 시작 -->
+            <div class="space-y-2">
+              <label
+                for="Player1"
+                class="flex cursor-pointer items-start gap-4"
+              >
+                <div class="flex items-center">
+                  &#8203;
+                  <input
+                    type="checkbox"
+                    class="size-4 rounded border-gray-300"
+                    name="players[]"
+                    value="이찬일"
+                  />
+                </div>
+
+                <div>
+                  <strong class="font-medium text-gray-900"> 이찬일 </strong>
+                </div>
+              </label>
+            </div>
+            <!-- 체크박스 + 동아리원명 끝 -->
+
+            <!-- 체크박스 + 동아리원명 시작 -->
+            <div class="space-y-2">
+              <label
+                for="Player1"
+                class="flex cursor-pointer items-start gap-4"
+              >
+                <div class="flex items-center">
+                  &#8203;
+                  <input
+                    type="checkbox"
+                    class="size-4 rounded border-gray-300"
+                    name="players[]"
+                    value="장찬우"
+                  />
+                </div>
+
+                <div>
+                  <strong class="font-medium text-gray-900"> 장찬우 </strong>
+                </div>
+              </label>
+            </div>
+            <!-- 체크박스 + 동아리원명 끝 -->
+
+            <!-- 체크박스 + 동아리원명 시작 -->
+            <div class="space-y-2">
+              <label
+                for="Player1"
+                class="flex cursor-pointer items-start gap-4"
+              >
+                <div class="flex items-center">
+                  &#8203;
+                  <input
+                    type="checkbox"
+                    class="size-4 rounded border-gray-300"
+                    name="players[]"
+                    value="조성재"
+                  />
+                </div>
+
+                <div>
+                  <strong class="font-medium text-gray-900"> 조성재 </strong>
+                </div>
+              </label>
+            </div>
+            <!-- 체크박스 + 동아리원명 끝 -->
+
+            <!-- 체크박스 + 동아리원명 시작 -->
+            <div class="space-y-2">
+              <label
+                for="Player1"
+                class="flex cursor-pointer items-start gap-4"
+              >
+                <div class="flex items-center">
+                  &#8203;
+                  <input
+                    type="checkbox"
+                    class="size-4 rounded border-gray-300"
+                    name="players[]"
+                    value="최성민"
+                  />
+                </div>
+
+                <div>
+                  <strong class="font-medium text-gray-900"> 최성민 </strong>
+                </div>
+              </label>
+            </div>
+            <!-- 체크박스 + 동아리원명 끝 -->
+
+            <!-- 체크박스 + 동아리원명 시작 -->
+            <div class="space-y-2">
+              <label
+                for="Player1"
+                class="flex cursor-pointer items-start gap-4"
+              >
+                <div class="flex items-center">
+                  &#8203;
+                  <input
+                    type="checkbox"
+                    class="size-4 rounded border-gray-300"
+                    name="players[]"
+                    value="황도윤"
+                  />
+                </div>
+
+                <div>
+                  <strong class="font-medium text-gray-900"> 황도윤 </strong>
+                </div>
+              </label>
+            </div>
+            <!-- 체크박스 + 동아리원명 끝 -->
+
+            <!-- 체크박스 + 동아리원명 시작 -->
+            <div class="space-y-2">
+              <label
+                for="Player1"
+                class="flex cursor-pointer items-start gap-4"
+              >
+                <div class="flex items-center">
+                  &#8203;
+                  <input
+                    type="checkbox"
+                    class="size-4 rounded border-gray-300"
+                    name="players[]"
+                    value="황재훈"
+                  />
+                </div>
+
+                <div>
+                  <strong class="font-medium text-gray-900"> 황재훈 </strong>
+                </div>
+              </label>
+            </div>
+            <!-- 체크박스 + 동아리원명 끝 -->
+          </div>
+          <!-- 오른쪽 체크박스 끝 -->
+        </fieldset>
+
+        <div class="items-center justify-between">
+          <button
+            type="button"
+            value="submit"
+            onclick="submitForm()"
+            class="inline-block rounded-lg bg-blue-500 px-5 py-3 text-sm font-medium text-white"
+          >
+            팀 구성하기
+          </button>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
