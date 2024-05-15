@@ -14,7 +14,9 @@
           Emotion FAS 팀 자동 매칭 시스템
         </h1>
 
-        <p class="mt-4 text-gray-500">풋살 참여 인원을 선택해주세요</p>
+        <p class="mt-4 text-gray-500">
+          팀 최대 인원수와 풋살 참여자를 선택해주세요
+        </p>
       </div>
 
       <form
@@ -23,6 +25,45 @@
         method="post"
         class="mx-auto mb-0 mt-8 max-w-md space-y-4"
       >
+        <!-- 팀 인원 선택 버튼 시작 -->
+        <div class="grid grid-cols-1 gap-4 text-center sm:grid-cols-2">
+          <div>
+            <label
+              for="fiveTeam"
+              class="block w-full cursor-pointer rounded-lg border border-gray-200 p-3 text-gray-600 hover:border-black has-[:checked]:border-black has-[:checked]:bg-black has-[:checked]:text-white"
+              tabindex="0"
+            >
+              <input
+                class="sr-only"
+                id="fiveTeam"
+                type="radio"
+                tabindex="-1"
+                name="maxPeople"
+                value="fiveTeam"
+              />
+              <span class="text-sm"> 5명 </span>
+            </label>
+          </div>
+
+          <div>
+            <label
+              for="sixTeam"
+              class="block w-full cursor-pointer rounded-lg border border-gray-200 p-3 text-gray-600 hover:border-black has-[:checked]:border-black has-[:checked]:bg-black has-[:checked]:text-white"
+              tabindex="0"
+            >
+              <input
+                class="sr-only"
+                id="sixTeam"
+                type="radio"
+                tabindex="-1"
+                name="maxPeople"
+                value="sixTeam"
+              />
+              <span class="text-sm"> 6명 </span>
+            </label>
+          </div>
+        </div>
+        <!-- 팀 인원 선택 끝 -->
         <fieldset class="flex">
           <legend class="sr-only">동아리원 목록</legend>
 
